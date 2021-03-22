@@ -1,17 +1,20 @@
 {
-  "name": "kanbanApp",
+  "name": "crash",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:css": "tailwind build src/style.css -o dist/style.css"
+    "build:css": "tailwind build src/style.css -o dist/style.css",
+    "json:server": "json-server --watch db.json"
+    
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "autoprefixer": "^10.2.5",
-    "postcss": "^8.2.8",
+    "json-server": "^0.16.3",
+    "postcss-cli": "^8.3.1",
     "tailwindcss": "^2.0.3"
   }
 }

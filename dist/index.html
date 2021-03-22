@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tailwind</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+
+    <!-- navbar -->
+    <nav class="bg-indigo-400 p-3 flex items-center justify-between">
+        <!-- left side -->
+        <div class="flex items-center ml-6">
+            <a href="#" class="inline-block p-3 text-white hover:text-indigo-700 transition ease-in font-bold text-xl uppercase">home</a>
+            <a href="#" class="inline-block p-3 text-white hover:text-indigo-700 transition ease-in font-bold text-xl uppercase">about</a>
+        </div>
+        <!-- middle side -->
+        <div class="text-center text-white font-extrabold text-3xl uppercase">
+            <h2>kanban board</h2>
+        </div>
+        <!-- right side -->
+        <div class="flex items-center mr-6">
+            <a href="#"
+                class="inline-block py-2 px-4 text-indigo-500 bg-indigo-200 mr-4 hover:text-white hover:bg-indigo-900 transition ease-out font-bold uppercase rounded">login</a>
+            <a href="#"
+                class="inline-block py-2 px-3 text-indigo-500 bg-indigo-200 mr-2 hover:text-white hover:bg-indigo-900 transition ease-out font-bold uppercase rounded">signup</a>
+        </div>
+    </nav>
+
+    <!-- main -->
+    <main>
+        <div class="flex items-center justify-center">
+            <input type="text" placeholder="Add Task..." id="task-value" class="my-4 p-4 border-solid border-2 border-indigo-300">
+            <button id="add-task" class="bg-indigo-300 p-4 text-white m-4  hover:bg-indigo-700 hover:text-white font-bold transition ease-in duration-300">+</button>
+        </div>
+
+        <div class="grid grid-cols-5 gap-2 grid-flow-row m-2 w-screen h-full">
+            <div class="column dropzone text-center bg-indigo-200 hover:border-blue-400 border-solid border-2">
+                <h5 class="bg-indigo-300">todo</h5>
+                <ul id="tasks-list">
+                     <!-- <li id="task" class="p-2 m-2 box-border list-none border-2 border-solid border-blue-300 rounded hover:border-blue-600 border-2 border-solid inline-block break-all" draggable="true">
+                        <div id="content-task">contents</div>
+                        <div class="flex justify-between">
+                            <a href="#" class="hover:text-blue-600" id="edit-task">Edit</a>
+                            <a href="#" class="hover:text-red-600" id="delete-task">Delete</a>
+                        </div>
+                         
+                    </li>   -->
+
+                </ul>
+            </div>
+            <div class="text-center">
+                <h5 class="bg-indigo-300">analysis</h5>
+                <div class="h-48 grid grid-cols-2 w-full">
+
+                    <div  class="column dropzone bg-blue-300 h-full hover:border-blue-400 border-solid border-2">
+                        <h6 class="bg-blue-200">doing</h6>
+
+                        <ul id="analysis-doing">
+                            
+       
+                       </ul>
+                         
+                    </div>
+                    <div class="column dropzone bg-blue-200 h-full hover:border-blue-400 border-solid border-2">
+                        <h6 class="bg-blue-300">done</h6>
+
+                        <ul id="analysis-done">
+                            
+       
+                       </ul>
+
+
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="text-center">
+                <h5 class="bg-indigo-300">development</h5>
+                <div class="h-48 grid grid-cols-2 w-full">
+                    <div class="column dropzone bg-blue-300 h-full hover:border-blue-400 border-solid border-2">
+                        <h6 class="bg-blue-500">doing</h6>
+                        <ul id="development-doing">
+                            
+       
+                        </ul>
+                      
+
+                        
+                    </div>
+                    <div class="column dropzone bg-blue-200 h-full hover:border-blue-400 border-solid border-2">
+                        <h6 class="bg-blue-600">done</h6>
+                        <ul id="development-done">
+                            
+       
+                        </ul>
+
+
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="text-center">
+                <h5 class="bg-indigo-300">testing</h5>
+                <div class="h-48 grid grid-cols-2 w-full">
+                    <div class="column dropzone bg-blue-300 h-full hover:border-blue-400 border-solid border-2">
+                        <h6 class="bg-blue-500">doing</h6>
+                        <ul id="testing-doing">
+                            
+       
+                        </ul>  
+                    </div>
+                    <div class="column dropzone bg-blue-200 h-full hover:border-blue-400 border-solid border-2">
+                        <h6 class="bg-blue-600">done</h6>
+                        <ul id="testing-done">
+                            
+       
+                        </ul>
+
+
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="column dropzone text-center bg-indigo-200 hover:border-blue-400 border-solid border-2">
+                <h5 class="bg-indigo-300">done</h5>
+                <ul id="done-lists">
+                            
+       
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    
+    <script src="/app.js"></script>
+</body>
+</html>

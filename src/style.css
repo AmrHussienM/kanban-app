@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.hold:active:hover {
+  @apply  border-solid border-2 border-blue ;
+  }
+  
+  .hovered {
+    @apply border-dashed;
+  }
+  .invisible {
+    @apply display-none;
+  }
